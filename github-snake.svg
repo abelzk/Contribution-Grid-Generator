@@ -1,0 +1,9 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg"><rect id="snake" width="10" height="10" fill="green" /><style>
+        @keyframes snake-move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(784px, 0); }
+        }
+        #snake {
+            animation: snake-move 60s linear infinite;
+        }
+    </style></svg>
