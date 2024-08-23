@@ -10,7 +10,6 @@ def fetch_github_contributions(username):
     return response.text
 
 def parse_contributions(html_content):
-    # This is a simplified parser and might need adjustment based on GitHub's HTML structure
     contributions = []
     for line in html_content.split('\n'):
         if 'data-count' in line and 'data-date' in line:
@@ -57,7 +56,6 @@ def get_color(count):
         return "#196127"
 
 def main():
-    # Get the username from the environment variable
     username = os.environ.get('GITHUB_USERNAME')
     if not username:
         raise ValueError("GITHUB_USERNAME environment variable is not set")
