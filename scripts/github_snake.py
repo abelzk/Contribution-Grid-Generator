@@ -5,7 +5,8 @@ import xml.etree.ElementTree as ET
 import os
 
 def fetch_github_contributions(username):
-    url = f"https://github.com/users/{username}/contributions"
+    user = '1999AZZAR'
+    url = f"https://github.com/users/{user}/contributions"
     response = requests.get(url)
     return response.text
 
